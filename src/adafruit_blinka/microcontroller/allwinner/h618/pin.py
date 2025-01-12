@@ -31,7 +31,13 @@ if find_gpiochip_number("300b000.pinctrl"):
 else:
     __chip_num = 0
 
-__chip_num = 0
+# Uncomment below for OrangePi Zero 2W
+"""
+if find_gpiochip_number("300b000.pinctrl"):
+    __chip_num = 0
+else:
+    __chip_num = 1
+"""
 
 PC0 = Pin((__chip_num, 64))
 SPI0_SCLK = PC0
