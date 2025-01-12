@@ -31,6 +31,8 @@ if find_gpiochip_number("300b000.pinctrl"):
 else:
     __chip_num = 0
 
+__chip_num = 0
+
 PC0 = Pin((__chip_num, 64))
 SPI0_SCLK = PC0
 PC1 = Pin((__chip_num, 65))
